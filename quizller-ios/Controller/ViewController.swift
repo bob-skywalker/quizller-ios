@@ -12,8 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var TrueButton: UIButton!
     @IBOutlet weak var FalseButton: UIButton!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     
     var quizBrain = QuizBrain()
+    
+
     
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
@@ -29,11 +33,8 @@ class ViewController: UIViewController {
             sender.layer.cornerRadius = 15
         }
         
-        if quizBrain.questionNum < quizBrain.quiz.count - 1 {
-            quizBrain.questionNum += 1
-        } else {
-            quizBrain.questionNum = 0
-        }
+        quizBrain.nextQuestion()
+
         
         Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
         
@@ -44,6 +45,7 @@ class ViewController: UIViewController {
         TrueButton.backgroundColor = UIColor.clear
         FalseButton.backgroundColor = UIColor.clear
         progressBar.progress = quizBrain.getProgress()
+        scoreLabel.text = quizBrain.getScore()
     }
     
     override func viewDidLoad() {
