@@ -1,17 +1,15 @@
 //
-//  ViewController.swift
+//  QuizBrain.swift
 //  quizller-ios
 //
 //  Created by bo zhong on 12/13/22.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController {
-    @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var progressBar: UIProgressView!
-    @IBOutlet weak var TrueButton: UIButton!
-    @IBOutlet weak var FalseButton: UIButton!
+
+struct QuizBrain{
+    var questionNum = 0 
     
     let quiz = [
         Question(q: "A slug's blood is green.", a: "True"),
@@ -29,43 +27,23 @@ class ViewController: UIViewController {
         
     ]
     
-    var questionNum = 0
-    
-    
-    @IBAction func answerButtonPressed(_ sender: UIButton) {
-        let userAnswer = sender.currentTitle
-        let actualAnswer = quiz[questionNum].answer
+    func checkAnswer(userAnswer: String) -> Bool{
+        let actualAnswer = self.quiz[questionNum].answer
         
-        if userAnswer == actualAnswer {
-            sender.backgroundColor = UIColor.green
-            sender.layer.cornerRadius = 15
+        if actualAnswer == userAnswer{
+            return true
         } else {
-            sender.backgroundColor = UIColor.red
-            sender.layer.cornerRadius = 15
+            return false 
         }
         
-        if questionNum < quiz.count - 1 {
-            questionNum += 1
-        } else {
-            questionNum = 0
-        }
-        
-        Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
-        
     }
     
-    @objc func updateUI(){
-        questionLabel.text = quiz[questionNum].text
-        TrueButton.backgroundColor = UIColor.clear
-        FalseButton.backgroundColor = UIColor.clear
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        updateUI()
+    func getQuestionText() -> String {
+        return quiz[questionNum].text
     }
     
     
+    func getProgress() -> Float {
+        return Float(questionNum + 1) / Float(quiz.count)
+    }
 }
-
