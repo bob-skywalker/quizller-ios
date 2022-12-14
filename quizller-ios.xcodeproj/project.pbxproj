@@ -15,6 +15,7 @@
 		5C5BF6052949083D00C5551C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5BF6032949083D00C5551C /* LaunchScreen.storyboard */; };
 		5C5BF60D29491CD900C5551C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BF60C29491CD900C5551C /* Question.swift */; };
 		5C5BF612294925F600C5551C /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BF611294925F600C5551C /* QuizBrain.swift */; };
+		5CD574C9294A800E00E72743 /* LaunshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD574C8294A800E00E72743 /* LaunshViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5C5BF6062949083D00C5551C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C5BF60C29491CD900C5551C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5C5BF611294925F600C5551C /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		5CD574C8294A800E00E72743 /* LaunshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunshViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5C5BF5FC2949083B00C5551C /* ViewController.swift */,
+				5CD574C8294A800E00E72743 /* LaunshViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C5BF612294925F600C5551C /* QuizBrain.swift in Sources */,
+				5CD574C9294A800E00E72743 /* LaunshViewController.swift in Sources */,
 				5C5BF5FD2949083B00C5551C /* ViewController.swift in Sources */,
 				5C5BF60D29491CD900C5551C /* Question.swift in Sources */,
 				5C5BF5F92949083B00C5551C /* AppDelegate.swift in Sources */,
