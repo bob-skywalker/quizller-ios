@@ -93,7 +93,7 @@
                         <outlet property="FalseButton" destination="avU-bm-JnU" id="0zh-VN-9vl"/>
                         <outlet property="TrueButton" destination="jat-5F-6MH" id="Jb4-qz-aDa"/>
                         <outlet property="progressBar" destination="voa-fW-mRn" id="NTG-Fx-vnW"/>
-                        <outlet property="questionLabel" destination="6fd-Tu-xYj" id="Hl5-DJ-hsB"/>
+                        <outlet property="questionLabel" destination="6fd-Tu-xYj" id="ZxN-P6-dLS"/>
                         <outlet property="scoreLabel" destination="TRM-2e-iGh" id="dQb-CE-kYO"/>
                     </connections>
                 </viewController>
@@ -102,6 +102,11 @@
             <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="6fd-Tu-xYj">
+            <size key="intrinsicContentSize" width="193" height="36"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Background-Bubbles" width="352" height="102"/>
         <image name="Rectangle" width="322" height="68"/>

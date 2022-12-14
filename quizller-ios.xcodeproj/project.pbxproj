@@ -16,9 +16,13 @@
 		5C5BF60D29491CD900C5551C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BF60C29491CD900C5551C /* Question.swift */; };
 		5C5BF612294925F600C5551C /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BF611294925F600C5551C /* QuizBrain.swift */; };
 		5CD574C9294A800E00E72743 /* LaunshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD574C8294A800E00E72743 /* LaunshViewController.swift */; };
+		78B871750D5E21BE56CE0FA2 /* Pods_quizller_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506BC2FD79F5CC1916AB552C /* Pods_quizller_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33085E39AA0452A3050DAC0F /* Pods-quizller-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quizller-ios.release.xcconfig"; path = "Target Support Files/Pods-quizller-ios/Pods-quizller-ios.release.xcconfig"; sourceTree = "<group>"; };
+		4944ABC2EF6D1698E9E16963 /* Pods-quizller-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quizller-ios.debug.xcconfig"; path = "Target Support Files/Pods-quizller-ios/Pods-quizller-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		506BC2FD79F5CC1916AB552C /* Pods_quizller_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quizller_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5BF5F52949083B00C5551C /* quizller-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quizller-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5BF5F82949083B00C5551C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C5BF5FA2949083B00C5551C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B871750D5E21BE56CE0FA2 /* Pods_quizller_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290D1FEAE049FF135CDD8F95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4944ABC2EF6D1698E9E16963 /* Pods-quizller-ios.debug.xcconfig */,
+				33085E39AA0452A3050DAC0F /* Pods-quizller-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5C5BF5EC2949083B00C5551C = {
 			isa = PBXGroup;
 			children = (
 				5C5BF5F72949083B00C5551C /* quizller-ios */,
 				5C5BF5F62949083B00C5551C /* Products */,
+				290D1FEAE049FF135CDD8F95 /* Pods */,
+				C157871C279F98346EF0DBE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +117,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		C157871C279F98346EF0DBE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				506BC2FD79F5CC1916AB552C /* Pods_quizller_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C5BF6092949083D00C5551C /* Build configuration list for PBXNativeTarget "quizller-ios" */;
 			buildPhases = (
+				DC9D4CD69E55F0091CD79551 /* [CP] Check Pods Manifest.lock */,
 				5C5BF5F12949083B00C5551C /* Sources */,
 				5C5BF5F22949083B00C5551C /* Frameworks */,
 				5C5BF5F32949083B00C5551C /* Resources */,
+				6EA933A7D1B0AA9562E55ECA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +192,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EA933A7D1B0AA9562E55ECA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quizller-ios/Pods-quizller-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quizller-ios/Pods-quizller-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quizller-ios/Pods-quizller-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC9D4CD69E55F0091CD79551 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quizller-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C5BF5F12949083B00C5551C /* Sources */ = {
@@ -318,6 +387,7 @@
 		};
 		5C5BF60A2949083D00C5551C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4944ABC2EF6D1698E9E16963 /* Pods-quizller-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -345,6 +415,7 @@
 		};
 		5C5BF60B2949083D00C5551C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33085E39AA0452A3050DAC0F /* Pods-quizller-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
