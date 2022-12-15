@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class TestViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
@@ -22,10 +22,15 @@ class ViewController: UIViewController {
     var quizBrain = QuizBrain()
     var rightSoundPlayer: AVAudioPlayer?
     var wrongSoundPlayer: AVAudioPlayer?
+    var finalScore = "0.0"
+    
+
     
     let rightSoundPlayed = URL(fileURLWithPath: Bundle.main.path(forResource: "correctAnswer", ofType: "mp3")!)
     
     let wrongSoundPlayed = URL(fileURLWithPath: Bundle.main.path(forResource: "wrongAnswer", ofType: "mp3")!)
+    
+        
     
     @IBAction func bmgButtonPressed(_ sender: UIButton) {
         if let player = player, player.isPlaying{
@@ -72,6 +77,7 @@ class ViewController: UIViewController {
             do {
                 rightSoundPlayer = try AVAudioPlayer(contentsOf: rightSoundPlayed)
                 rightSoundPlayer?.play()
+                checkFinished()
             } catch{
                 print("something went wrong")
             }
@@ -81,6 +87,7 @@ class ViewController: UIViewController {
             do {
                 wrongSoundPlayer = try AVAudioPlayer(contentsOf: wrongSoundPlayed)
                 wrongSoundPlayer?.play()
+                checkFinished()
             }catch{
                 print("something went wrong")
             }
@@ -106,8 +113,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         updateUI()
         bgmButton.sendActions(for: .touchUpInside)
+    } 
+    
+    func checkFinished(){
+        if quizBrain.questionNum == quizBrain.quiz.count - 1{
+            let score = (Float(quizBrain.correctQuestionNum) / Float(quizBrain.quiz.count - 1)) * 100
+            finalScore = String(format: "%.1f", score)
+            self.performSegue(withIdentifier: "goToResult", sender: self)
+        }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult" {
+            let destinationVC = segue.destination as! ResultsViewController
+            destinationVC.finalScore = finalScore
+        }
+    }
     
+     
 }
 

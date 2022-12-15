@@ -8,9 +8,17 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
-
+    var finalScore: String?
+    
+    @IBOutlet weak var adviceLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    @IBAction func retakeTest(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        scoreLabel.text = finalScore
         
         // Do any additional setup after loading the view.
     }
