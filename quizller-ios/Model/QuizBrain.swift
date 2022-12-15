@@ -65,4 +65,6 @@ struct QuizBrain{
     func getImage() -> String{
         return "Q\(questionNum + 1)"
     }
+    
+    
 }

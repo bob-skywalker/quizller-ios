@@ -12,12 +12,26 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet weak var adviceLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    
-
+    @IBOutlet weak var viewBackGround: UIView!
+    @IBOutlet weak var trophyImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scoreLabel.text = finalScore
+        scoreLabel.text = "\(finalScore!)%"
+        
+        if Double(finalScore!)! < 50.0 {
+            adviceLabel.text = "🙁 Nice try, do not give up."
+            trophyImage.image = UIImage(named: "bronze_medal")
+            viewBackGround.backgroundColor = UIColor.lightGray
+        } else if Double(finalScore!)! > 50.0 && Double(finalScore!)! < 80.0 {
+            viewBackGround.backgroundColor = UIColor.systemTeal
+            trophyImage.image = UIImage(named: "silver_medal")
+            adviceLabel.text = "Good Job, you will do better next time! 👏"
+        } else {
+            viewBackGround.backgroundColor = UIColor.blue
+            trophyImage.image = UIImage(named: "gold_medal")
+            adviceLabel.text = "You are awesome! Kudos to you 😊"
+        }
         
         // Do any additional setup after loading the view.
     }
