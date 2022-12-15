@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-traffic-sign-symbol-road-clip-art-5ae74e7d64a2f3.8794507915251083494122.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-traffic-sign-symbol-road-clip-art-5ae74e7d64a2f3.8794507915251083494122@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-traffic-sign-symbol-road-clip-art-5ae74e7d64a2f3.8794507915251083494122@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

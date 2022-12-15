@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-sandy-beach-ocean-beach-seaside-beach-5a74b936a34e32.9899820015175990306689.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-sandy-beach-ocean-beach-seaside-beach-5a74b936a34e32.9899820015175990306689@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-sandy-beach-ocean-beach-seaside-beach-5a74b936a34e32.9899820015175990306689@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

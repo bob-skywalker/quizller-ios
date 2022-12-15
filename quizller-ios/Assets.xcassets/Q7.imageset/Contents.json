@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-cattle-doctorate-chronic-condition-doctor-of-philo-angry-cow-5b0c77b1ac0991.5253778715275437297047.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-cattle-doctorate-chronic-condition-doctor-of-philo-angry-cow-5b0c77b1ac0991.5253778715275437297047@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-cattle-doctorate-chronic-condition-doctor-of-philo-angry-cow-5b0c77b1ac0991.5253778715275437297047@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

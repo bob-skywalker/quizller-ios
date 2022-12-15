@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-african-bush-elephant-asian-elephant-african-fores-elephant-5a80a37a994235.2280903215183798986278.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-african-bush-elephant-asian-elephant-african-fores-elephant-5a80a37a994235.2280903215183798986278@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-african-bush-elephant-asian-elephant-african-fores-elephant-5a80a37a994235.2280903215183798986278@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

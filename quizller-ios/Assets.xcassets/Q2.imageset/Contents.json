@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-human-skeleton-bone-stock-photography-skull-a-row-of-skeletons-5a6fd18c8809d5.1744977415172775805572.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-human-skeleton-bone-stock-photography-skull-a-row-of-skeletons-5a6fd18c8809d5.1744977415172775805572@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-human-skeleton-bone-stock-photography-skull-a-row-of-skeletons-5a6fd18c8809d5.1744977415172775805572@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -15,8 +15,11 @@ class TestViewController: UIViewController {
     @IBOutlet weak var TrueButton: UIButton!
     @IBOutlet weak var FalseButton: UIButton!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var questionImage: UIImageView!
     
     @IBOutlet weak var bgmButton: UIButton!
+    
+    
     
     var player: AVAudioPlayer?
     var quizBrain = QuizBrain()
@@ -106,6 +109,7 @@ class TestViewController: UIViewController {
         FalseButton.backgroundColor = UIColor.clear
         progressBar.progress = quizBrain.getProgress()
         scoreLabel.text = quizBrain.getScore()
+        questionImage.image = UIImage(named: quizBrain.getImage())
     }
     
     override func viewDidLoad() {

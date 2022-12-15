@@ -61,4 +61,8 @@ struct QuizBrain{
     mutating func getScore() -> String{
         return "Score: \(correctQuestionNum) / \(questionNum)"
     }
+    
+    func getImage() -> String{
+        return "Q\(questionNum + 1)"
+    }
 }

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-parliament-hill-parliament-of-canada-house-of-comm-parliment-5b4214103f8fa9.5974786715310571682604.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-parliament-hill-parliament-of-canada-house-of-comm-parliment-5b4214103f8fa9.5974786715310571682604@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-parliament-hill-parliament-of-canada-house-of-comm-parliment-5b4214103f8fa9.5974786715310571682604@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
