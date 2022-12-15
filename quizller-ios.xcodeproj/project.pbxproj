@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C4678F1294A99AE003FB746 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C4678F0294A99AE003FB746 /* audio.mp3 */; };
 		5C5BF5F92949083B00C5551C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BF5F82949083B00C5551C /* AppDelegate.swift */; };
 		5C5BF5FB2949083B00C5551C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BF5FA2949083B00C5551C /* SceneDelegate.swift */; };
 		5C5BF5FD2949083B00C5551C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BF5FC2949083B00C5551C /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		33085E39AA0452A3050DAC0F /* Pods-quizller-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quizller-ios.release.xcconfig"; path = "Target Support Files/Pods-quizller-ios/Pods-quizller-ios.release.xcconfig"; sourceTree = "<group>"; };
 		4944ABC2EF6D1698E9E16963 /* Pods-quizller-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quizller-ios.debug.xcconfig"; path = "Target Support Files/Pods-quizller-ios/Pods-quizller-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		506BC2FD79F5CC1916AB552C /* Pods_quizller_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quizller_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4678F0294A99AE003FB746 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 		5C5BF5F52949083B00C5551C /* quizller-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quizller-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5BF5F82949083B00C5551C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C5BF5FA2949083B00C5551C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +56,6 @@
 				4944ABC2EF6D1698E9E16963 /* Pods-quizller-ios.debug.xcconfig */,
 				33085E39AA0452A3050DAC0F /* Pods-quizller-ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +82,7 @@
 			children = (
 				5C5BF5F82949083B00C5551C /* AppDelegate.swift */,
 				5C5BF5FA2949083B00C5551C /* SceneDelegate.swift */,
+				5C4678F0294A99AE003FB746 /* audio.mp3 */,
 				5C5BF60E2949259500C5551C /* Model */,
 				5C5BF60F294925A100C5551C /* View */,
 				5C5BF610294925A900C5551C /* Controller */,
@@ -188,6 +190,7 @@
 				5C5BF6052949083D00C5551C /* LaunchScreen.storyboard in Resources */,
 				5C5BF6022949083D00C5551C /* Assets.xcassets in Resources */,
 				5C5BF6002949083B00C5551C /* Main.storyboard in Resources */,
+				5C4678F1294A99AE003FB746 /* audio.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

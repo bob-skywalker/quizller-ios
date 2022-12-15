@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -15,9 +16,44 @@ class ViewController: UIViewController {
     @IBOutlet weak var FalseButton: UIButton!
     @IBOutlet weak var scoreLabel: UILabel!
     
+    @IBOutlet weak var bgmButton: UIButton!
     
+    var player: AVAudioPlayer?
     var quizBrain = QuizBrain()
     
+    @IBAction func bmgButtonPressed(_ sender: UIButton) {
+        if let player = player, player.isPlaying{
+            bgmButton.setTitle("Play", for: .normal)
+            player.stop()
+            
+        } else {
+            bgmButton.setTitle("Stop", for: .normal)
+            let urlString = Bundle.main.path(forResource: "audio", ofType: "mp3")
+            
+            do{
+                try AVAudioSession.sharedInstance().setMode(.default)
+                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                
+                guard let urlString = urlString else{
+                    return
+                }
+                
+                player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
+                
+                guard let player = player else{
+                    return
+                }
+                player.play()
+            }
+            catch{
+                print("something went wrong")
+            }
+        }
+    }
+    
+    
+
+
 
     
     
@@ -53,6 +89,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         updateUI()
+        bgmButton.sendActions(for: .touchUpInside)
     }
     
     
