@@ -29,12 +29,12 @@ class ViewController: UIViewController {
     
     @IBAction func bmgButtonPressed(_ sender: UIButton) {
         if let player = player, player.isPlaying{
-            bgmButton.setTitle("Play", for: .normal)
+            bgmButton.setTitle("play sound", for: .normal)
             bgmButton.setImage(UIImage(systemName: "play.circle"), for: .normal)
             player.stop()
             
         } else {
-            bgmButton.setTitle("Stop", for: .normal)
+            bgmButton.setTitle("stop sound", for: .normal)
             bgmButton.setImage(UIImage(systemName: "stop.circle"), for: .normal)
             let urlString = Bundle.main.path(forResource: "audio", ofType: "mp3")
             
