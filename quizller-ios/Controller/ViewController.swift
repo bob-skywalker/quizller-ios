@@ -20,14 +20,22 @@ class ViewController: UIViewController {
     
     var player: AVAudioPlayer?
     var quizBrain = QuizBrain()
+    var rightSoundPlayer: AVAudioPlayer?
+    var wrongSoundPlayer: AVAudioPlayer?
+    
+    let rightSoundPlayed = URL(fileURLWithPath: Bundle.main.path(forResource: "correctAnswer", ofType: "mp3")!)
+    
+    let wrongSoundPlayed = URL(fileURLWithPath: Bundle.main.path(forResource: "wrongAnswer", ofType: "mp3")!)
     
     @IBAction func bmgButtonPressed(_ sender: UIButton) {
         if let player = player, player.isPlaying{
             bgmButton.setTitle("Play", for: .normal)
+            bgmButton.setImage(UIImage(systemName: "play.circle"), for: .normal)
             player.stop()
             
         } else {
             bgmButton.setTitle("Stop", for: .normal)
+            bgmButton.setImage(UIImage(systemName: "stop.circle"), for: .normal)
             let urlString = Bundle.main.path(forResource: "audio", ofType: "mp3")
             
             do{
@@ -52,10 +60,6 @@ class ViewController: UIViewController {
     }
     
     
-
-
-
-    
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         let userAnswer = sender.currentTitle!
@@ -65,9 +69,21 @@ class ViewController: UIViewController {
         if userGotItRight {
             sender.backgroundColor = UIColor.green
             sender.layer.cornerRadius = 15
+            do {
+                rightSoundPlayer = try AVAudioPlayer(contentsOf: rightSoundPlayed)
+                rightSoundPlayer?.play()
+            } catch{
+                print("something went wrong")
+            }
         } else {
             sender.backgroundColor = UIColor.red
             sender.layer.cornerRadius = 15
+            do {
+                wrongSoundPlayer = try AVAudioPlayer(contentsOf: wrongSoundPlayed)
+                wrongSoundPlayer?.play()
+            }catch{
+                print("something went wrong")
+            }
         }
         
         quizBrain.nextQuestion()
