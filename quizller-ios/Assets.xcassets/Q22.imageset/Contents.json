@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-great-wall-of-china-summer-palace-mutianyu-badalin-beijing-great-wall-of-china-5a7a4369292e09.4377362815179620891687.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-great-wall-of-china-summer-palace-mutianyu-badalin-beijing-great-wall-of-china-5a7a4369292e09.4377362815179620891687@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-great-wall-of-china-summer-palace-mutianyu-badalin-beijing-great-wall-of-china-5a7a4369292e09.4377362815179620891687@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

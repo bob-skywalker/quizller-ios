@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-china-chinese-new-year-paper-lantern-sky-lantern-chinese-new-year-red-lanterns-5a83c29808ed77.7686690115185844720366.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-china-chinese-new-year-paper-lantern-sky-lantern-chinese-new-year-red-lanterns-5a83c29808ed77.7686690115185844720366@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-china-chinese-new-year-paper-lantern-sky-lantern-chinese-new-year-red-lanterns-5a83c29808ed77.7686690115185844720366@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-skeletal-muscle-muscular-system-human-body-running-5ae46ee54f08b1.3237807215249200373237.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-skeletal-muscle-muscular-system-human-body-running-5ae46ee54f08b1.3237807215249200373237@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-skeletal-muscle-muscular-system-human-body-running-5ae46ee54f08b1.3237807215249200373237@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

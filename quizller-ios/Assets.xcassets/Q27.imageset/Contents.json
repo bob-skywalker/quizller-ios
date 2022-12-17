@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-wink-eye-drawing-clip-art-eyes-5ab5dca74398b9.4808261215218679432769.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-wink-eye-drawing-clip-art-eyes-5ab5dca74398b9.4808261215218679432769@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-wink-eye-drawing-clip-art-eyes-5ab5dca74398b9.4808261215218679432769@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

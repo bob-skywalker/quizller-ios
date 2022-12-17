@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-gulf-of-mexico-atlantic-hurricane-hurricane-hilda-hurricane-5ab4695ddfd256.1666390815217728939168.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-gulf-of-mexico-atlantic-hurricane-hurricane-hilda-hurricane-5ab4695ddfd256.1666390815217728939168@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-gulf-of-mexico-atlantic-hurricane-hurricane-hilda-hurricane-5ab4695ddfd256.1666390815217728939168@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

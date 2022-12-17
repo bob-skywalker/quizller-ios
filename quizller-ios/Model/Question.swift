@@ -10,9 +10,11 @@ import Foundation
 struct Question {
     let text: String
     let answer: String
+    let imgId: String
     
-    init(q: String, a: String) {
+    init(q: String, a: String, img: String) {
         self.text = q
         self.answer = a
+        self.imgId = img
     }
 }
