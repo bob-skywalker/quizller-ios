@@ -120,7 +120,7 @@ class TestViewController: UIViewController {
     } 
     
     func checkFinished(){
-        if quizBrain.questionNum == 10 {
+        if quizBrain.questionNum == 9 {
             let score = (Float(quizBrain.correctQuestionNum) / 10) * 100
             finalScore = String(format: "%.1f", score)
             self.performSegue(withIdentifier: "goToResult", sender: self)
