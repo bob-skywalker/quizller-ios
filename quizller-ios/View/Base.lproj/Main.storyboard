@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -146,74 +147,82 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="fyf-Zh-Y29">
-                                <rect key="frame" x="-11" y="-1" width="414" height="866"/>
+                                <rect key="frame" x="-31" y="-1" width="468" height="866"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result_background" translatesAutoresizingMaskIntoConstraints="NO" id="U30-oc-AtA">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="866"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="result_background" translatesAutoresizingMaskIntoConstraints="NO" id="U30-oc-AtA">
+                                        <rect key="frame" x="0.0" y="0.0" width="476" height="909"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zLA-iP-HOu">
-                                        <rect key="frame" x="89" y="377" width="236" height="177.66666666666674"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="7XO-IQ-JcJ">
+                                        <rect key="frame" x="93" y="39" width="282.33333333333331" height="698.33333333333337"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="YOUR SCORE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e61-x1-eSA">
-                                                <rect key="frame" x="0.0" y="0.0" width="236" height="42"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jMv-E4-kNB">
+                                                <rect key="frame" x="43.666666666666686" y="0.0" width="195" height="174"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="174" id="oY7-zz-xc9"/>
+                                                    <constraint firstAttribute="width" constant="195" id="u16-KW-9vV"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congradualtions!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTa-CY-42v">
+                                                <rect key="frame" x="40.000000000000014" y="249" width="202.33333333333337" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="19.5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3v-0u-8gL">
-                                                <rect key="frame" x="0.0" y="50.000000000000007" width="236" height="95.666666666666686"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="EAT SOME MORE SNACKS!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dv-e4-CPg">
-                                                <rect key="frame" x="0.0" y="153.66666666666669" width="236" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="zLA-iP-HOu">
+                                                <rect key="frame" x="11" y="354" width="260" height="344.33333333333326"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" ambiguous="YES" text="YOUR SCORE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e61-x1-eSA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="117.33333333333333"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" ambiguous="YES" text="19.5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3v-0u-8gL">
+                                                        <rect key="frame" x="0.0" y="152.33333333333337" width="260" height="71.666666666666686"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" ambiguous="YES" text="EAT SOME MORE SNACKS!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dv-e4-CPg">
+                                                        <rect key="frame" x="0.0" y="259" width="260" height="19.333333333333314"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="260" id="6Op-KL-Znf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-JD-d0m">
+                                                        <rect key="frame" x="0.0" y="313.33333333333337" width="260" height="31"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="PLAY AGAIN" cornerStyle="fixed">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                            <color key="baseForegroundColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="playAgainPressed:" destination="AlE-u5-kKt" eventType="touchUpInside" id="JnV-Vj-ysE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-JD-d0m">
-                                        <rect key="frame" x="43" y="703" width="329" height="47"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="PLAY AGAIN">
-                                            <color key="titleColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="playAgainPressed:" destination="AlE-u5-kKt" eventType="touchUpInside" id="JnV-Vj-ysE"/>
-                                        </connections>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jMv-E4-kNB">
-                                        <rect key="frame" x="105" y="59" width="205" height="174"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congradualtions!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTa-CY-42v">
-                                        <rect key="frame" x="64" y="259" width="287" height="47"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="iRU-lN-J5h"/>
                                 <color key="backgroundColor" red="0.19980379940000001" green="0.48169642689999997" blue="0.77313679459999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="zLA-iP-HOu" firstAttribute="centerY" secondItem="fyf-Zh-Y29" secondAttribute="centerY" id="FJn-bx-iZp"/>
-                                    <constraint firstAttribute="bottom" secondItem="U30-oc-AtA" secondAttribute="bottom" id="Q3n-pl-dji"/>
-                                    <constraint firstAttribute="trailing" secondItem="U30-oc-AtA" secondAttribute="trailing" id="UST-7J-xfO"/>
-                                    <constraint firstItem="zLA-iP-HOu" firstAttribute="centerX" secondItem="fyf-Zh-Y29" secondAttribute="centerX" id="ZgA-IC-0Cw"/>
-                                    <constraint firstItem="U30-oc-AtA" firstAttribute="top" secondItem="fyf-Zh-Y29" secondAttribute="top" id="edU-UO-A79"/>
-                                    <constraint firstItem="U30-oc-AtA" firstAttribute="leading" secondItem="fyf-Zh-Y29" secondAttribute="leading" id="fSt-HQ-lB0"/>
+                                    <constraint firstItem="iRU-lN-J5h" firstAttribute="bottom" secondItem="7XO-IQ-JcJ" secondAttribute="bottom" constant="128.66999999999999" id="Hhq-ag-QAU"/>
+                                    <constraint firstItem="iRU-lN-J5h" firstAttribute="trailing" secondItem="7XO-IQ-JcJ" secondAttribute="trailing" constant="92.670000000000002" id="Rdv-JC-S71"/>
+                                    <constraint firstItem="7XO-IQ-JcJ" firstAttribute="leading" secondItem="iRU-lN-J5h" secondAttribute="leading" constant="93" id="qfr-wk-UMs"/>
+                                    <constraint firstItem="7XO-IQ-JcJ" firstAttribute="top" secondItem="fyf-Zh-Y29" secondAttribute="top" constant="39" id="yIB-6D-PJf"/>
                                 </constraints>
                             </view>
                         </subviews>

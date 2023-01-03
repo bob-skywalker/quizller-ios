@@ -26,7 +26,7 @@ class ResultsViewController: UIViewController {
         } else if Double(finalScore!)! > 50.0 && Double(finalScore!)! < 80.0 {
             viewBackGround.backgroundColor = UIColor.systemTeal
             trophyImage.image = UIImage(named: "silver_medal")
-            adviceLabel.text = "Good Job, you will do better next time! 👏"
+            adviceLabel.text = "You will do better next time! 👏"
         } else {
             viewBackGround.backgroundColor = UIColor.blue
             trophyImage.image = UIImage(named: "gold_medal")
